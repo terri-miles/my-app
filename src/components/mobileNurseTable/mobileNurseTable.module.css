@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.header {
+  border-bottom: 2px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+.row {
+  border-bottom: 1px solid #ddd;
+}
+.cell {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.cell button {
+  padding: 12px;
+  background-color: var(--color-secondary-light);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.pageButton {
+  padding: 6px 12px;
+  border: none;
+  background: #6200ea;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.pageButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.active {
+  background: #3700b3;
+  color: white;
+  font-weight: bold;
+}

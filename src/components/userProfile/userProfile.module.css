@@ -1,0 +1,36 @@
+.userWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.imgContainer {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.texts {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .userWrapper {
+  }
+}

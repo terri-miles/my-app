@@ -1,0 +1,130 @@
+.container {
+  background-color: var(--color-primary);
+  width: inherit;
+  height: inherit;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 50px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.textContainer h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.textContainer span {
+  font-weight: bold;
+  color: var(--color-secondary-light);
+}
+
+.container p {
+  color: white;
+  font-size: 20px;
+  width: 75%;
+  text-align: center;
+  line-height: 28px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.buttons button:first-child {
+  background-color: var(--color-primary-light);
+}
+
+.buttons button:nth-child(2) {
+  background-color: var(--color-secondary);
+  padding: 15px 28px;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.img {
+  object-fit: cover;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.img:nth-child(2) {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: inherit;
+    height: inherit;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 60px;
+    gap: 50px;
+  }
+  .textContainer h1 {
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+  }
+  .textContainer span {
+    font-weight: bold;
+    color: var(--color-secondary-light);
+  }
+  .container p {
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    line-height: 28px;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .buttons button:first-child {
+    background-color: var(--color-primary-light);
+    padding: 15px 40px;
+  }
+
+  .buttons button:nth-child(2) {
+    background-color: var(--color-secondary);
+    padding: 15px 45px;
+  }
+  .imgContainer {
+    display: none;
+  }
+}

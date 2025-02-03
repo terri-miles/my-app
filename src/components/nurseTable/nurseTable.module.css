@@ -1,0 +1,47 @@
+.container {
+  /* overflow-x: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.header {
+  border-bottom: 2px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+.row {
+  border-bottom: 1px solid #ddd;
+}
+.cell {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.button button {
+  padding: 14px 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-success);
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: none;
+  }
+}

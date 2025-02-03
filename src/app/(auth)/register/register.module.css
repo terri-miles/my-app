@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: calc(100vh - 200px);
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  background-color: rgb(99, 2, 169);
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding: 0 18px;
+    }
+    .wrapper{
+      width: 400px;
+    }
+}

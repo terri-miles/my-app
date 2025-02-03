@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 200px);
+  padding: 0 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.userProfile {
+  flex: 1;
+  margin-top: 40px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  height: 580px;
+  padding: 24px;
+}
+
+.mobileUserProfile {
+  display: none;
+}
+
+.mobileHiredNurse {
+  display: none;
+}
+
+.hiredNurses {
+  flex: 3;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .userProfile {
+    display: none;
+  }
+  .hiredNurses {
+    display: none;
+  }
+  .mobileUserProfile {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .imgContainer {
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+  .img {
+    object-fit: cover;
+  }
+  .texts span {
+    font-size: 14px;
+  }
+  .texts h3 {
+    font-size: 20px;
+  }
+  .mobileHiredNurse {
+    display: block;
+  }
+}

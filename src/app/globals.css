@@ -1,0 +1,96 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #6a0dad; /* Rich Purple */
+  --color-primary-light: #c20def; /* Light Purple */
+  --color-primary-dark: #4b0082; /* Deep Indigo */
+
+  /* Secondary Colors */
+  --color-secondary: #008080; /* Teal */
+  --color-secondary-light: #42c0bc; /* Light Teal */
+  --color-secondary-dark: #005f5f; /* Deep Teal */
+
+  /* Neutral Colors (Text & Background) */
+  --color-text-primary: #333333; /* Dark Gray */
+  --color-text-secondary: #666666; /* Mid Gray */
+  --color-background-light: #f9f9f9; /* Light Background */
+  --color-background-dark: #1e1e1e; /* Dark Background */
+
+  /* Accent Colors */
+  --color-success: #28a745; /* Green */
+  --color-warning: #ffaa33; /* Orange */
+  --color-error: #e63946; /* Red */
+
+  /* Text on Dark Backgrounds */
+  --color-text-on-primary: #ffffff; /* White */
+  --color-text-on-secondary: #ffffff; /* White */
+  --color-text-on-dark: #ffffff; /* White */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to bottom, #db70f9, #f5d3fd);
+  height: 100vh; /* Adjust the height as needed */
+  /* width: 100%; */ 
+
+  background-color: white;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 
+@media (max-width: 1536px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 1020px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 475px;
+  }
+}
+@media (max-width: 475px) {
+  .container {
+    width: 380px;
+  }
+} */
