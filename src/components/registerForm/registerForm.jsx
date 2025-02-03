@@ -72,7 +72,7 @@ export default function RegisterForm() {
     const url = await upload(file);
 
     try {
-      const res = await axios.post("http://localhost:3000/api/register", {
+      const res = await axios.post("https://nurselink.vercel.app/api/register", {
         ...user,
         profileImage: url,
       });
